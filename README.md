@@ -44,5 +44,24 @@ DATABASES = {
 
 2) Open command prompt and navigate to Recommend\recommend>
  C:\Users\BizAct-110\Desktop\Recommendation\recommend>
+ 
+3) write py manage.py makemigration (it will generate t-SQL for  all the required database tables in the server)
+C:\Users\BizAct-110\Desktop\Recommendation\recommend> py manage.py makemigrations
+
+4)Type py manage.py migrate (it will run the sql generated in the above step. i.e it will create the tables in the database.)
+ C:\Users\BizAct-110\Desktop\Recommendation\recommend> py manage.py migrate
+ 
+5) You can also create useruser to see all the details in the admin panel.
+C:\Users\BizAct-110\Desktop\Recommendation\recommend> py manage.py createsuperuser
+
+6) type command py manage.py runserver
+C:\Users\BizAct-110\Desktop\Recommendation\recommend> py manage.py runserver
+
+# Author:
+
+Shivendra Verma
+
+Shivajnv2011@gmail.com
+
 
 
