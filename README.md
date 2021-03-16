@@ -95,10 +95,10 @@ C:\Users\BizAct-110\Desktop\Recommendation\recommend> py manage.py runserver
 ## User Login :-
 ![Image Not Available](https://github.com/shivendra04/Recommend/blob/master/Result/Login.PNG)
 
-## User Login :-
+## User Logout Redirection :-
 ![Image Not Available](https://github.com/shivendra04/Recommend/blob/master/Result/LogOutRedirection.PNG)
 
-## User Login :-
+## User SignUp :-
 ![Image Not Available](https://github.com/shivendra04/Recommend/blob/master/Result/SignUpform.PNG)
 
 
