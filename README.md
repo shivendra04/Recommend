@@ -4,7 +4,7 @@ Simple Application Implementing User recommendation based on their search on an 
 # Description:
 This Project contains 3 apps (User, Product, Recommendation). Product app contains all the product available on an ecommerce website, User app contains all the User registered on ecommerce website and Recommendation application contains the user making any search to the products available on the ecommerce website.
 
-Whenever registered user makes any search on the products available on the website, his ID and the Productid he searched for product will be captured in Recommendation Model. In this App, Search results are captured, if any products contain search string (product size and product shape). If user types anything in the search bar and if that string is present in product size of in product shape those products will be displayed to user.
+Whenever registered user makes any search on the products available on the website, his ID and the Productid he searched for product will be captured in Recommendation Model. In this App, Search results are captured, if any products contain search string (product size and product shape). If user types anything in the search bar and if that string is present in product size or in product shape those products will be displayed to user and these results will be captured in Recommendation table.
 
 This project also implements Update, Insert, Create User and Products in the Database. Which means Product details can be altered once it inserted in the database and same for user as well.
 
@@ -12,6 +12,7 @@ Currently recommendation App is populating based on the Registered users, not fr
 
 Pagination is also implemented in product dashboard to show only 15 products in 1 page.
 This project can be used to recommend product to user on the same website or any other website bases on his search history captured in Recommendation model.
+
 
 # Getting Started:
 ## Dependencies:-
@@ -28,8 +29,8 @@ Active Internet connection to load bootstrap used in the templates.
 ## Installing:-
 
 1) git clone https://github.com/shivendra04/Recommend.git
-2) 
-3) Change the connection used in the project in the setting.py to your connection or use default Inbuilt Database (SQLite3) provided by Django
+ 
+2) Change the connection used in the project in the setting.py to your connection or use default Inbuilt Database (SQLite3) provided by Django
 ## Executing Program:-
 
 1) Create the database in your system and change the connection details in the settings.py or uncomment the default the setting and comment out the current database configuration
@@ -66,6 +67,40 @@ C:\Users\BizAct-110\Desktop\Recommendation\recommend> py UserPopulate.py
 
 8) type command py manage.py runserver
 C:\Users\BizAct-110\Desktop\Recommendation\recommend> py manage.py runserver
+
+# Results
+
+## Product Dashboard showing  the Implementation of Insert, Update, Seach and Pagination 
+
+![Image Not Available](https://github.com/shivendra04/Recommend/blob/master/Result/ProductDashboard.PNG)
+
+## Product Insertion form:-
+![Image Not Available](https://github.com/shivendra04/Recommend/blob/master/Result/InsertProduct.PNG)
+
+## Product Update form:-
+![Image Not Available](https://github.com/shivendra04/Recommend/blob/master/Result/UpdateProduct.PNG)
+
+## User Dashboard:-
+![Image Not Available](https://github.com/shivendra04/Recommend/blob/master/Result/UserDashboard.PNG)
+
+## User Insert Form:-
+![Image Not Available](https://github.com/shivendra04/Recommend/blob/master/Result/InsertUser.PNG)
+
+## User Update Form:-
+![Image Not Available](https://github.com/shivendra04/Recommend/blob/master/Result/UpdateUser.PNG)
+
+## User Recommendation Dashboard:-
+![Image Not Available](https://github.com/shivendra04/Recommend/blob/master/Result/RecommendationDashboard.PNG)
+
+## User Login :-
+![Image Not Available](https://github.com/shivendra04/Recommend/blob/master/Result/Login.PNG)
+
+## User Login :-
+![Image Not Available](https://github.com/shivendra04/Recommend/blob/master/Result/LogOutRedirection.PNG)
+
+## User Login :-
+![Image Not Available](https://github.com/shivendra04/Recommend/blob/master/Result/SignUpform.PNG)
+
 
 # Author:
 
