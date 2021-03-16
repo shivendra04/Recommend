@@ -26,9 +26,12 @@ Windows 10 (created on windows 10)
 Active Internet connection to load bootstrap used in the templates.
 
 ## Installing:-
+
 1) git clone https://github.com/shivendra04/Recommend.git
-2) Change the connection used in the project in the setting.py to your connection or use default Inbuilt Database (SQLite3) provided by Django
+2) 
+3) Change the connection used in the project in the setting.py to your connection or use default Inbuilt Database (SQLite3) provided by Django
 ## Executing Program:-
+
 1) Create the database in your system and change the connection details in the settings.py or uncomment the default the setting and comment out the current database configuration
 
 DATABASES = {
@@ -48,13 +51,20 @@ DATABASES = {
 3) write py manage.py makemigration (it will generate t-SQL for  all the required database tables in the server)
 C:\Users\BizAct-110\Desktop\Recommendation\recommend> py manage.py makemigrations
 
-4)Type py manage.py migrate (it will run the sql generated in the above step. i.e it will create the tables in the database.)
+4) Type py manage.py migrate (it will run the sql generated in the above step. i.e it will create the tables in the database.)
  C:\Users\BizAct-110\Desktop\Recommendation\recommend> py manage.py migrate
  
 5) You can also create useruser to see all the details in the admin panel.
 C:\Users\BizAct-110\Desktop\Recommendation\recommend> py manage.py createsuperuser
 
-6) type command py manage.py runserver
+6)  You can run ProductPopulate.py (to populate the Product database. In current setup it will populate 35000 Products into Products table. You can change this number)
+C:\Users\BizAct-110\Desktop\Recommendation\recommend> py ProductPopulate.py
+
+7) You can run UserPopulate.py (to populate User database. In current setup it will populate 5 User into Users table. You can change this number) 
+C:\Users\BizAct-110\Desktop\Recommendation\recommend> py UserPopulate.py
+
+
+8) type command py manage.py runserver
 C:\Users\BizAct-110\Desktop\Recommendation\recommend> py manage.py runserver
 
 # Author:
