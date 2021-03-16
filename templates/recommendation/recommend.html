@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+{%extends 'user/index.html '%}
+
+{% block body_block %}
+<div class="container" align="center">
+  <h1>User Recommendation Dashbord</h1>
+    <table border =2>
+      <thead>
+          <th>Recommendation ID</th>
+          <th>User Id</th>
+          <th>Product ID</th>
+      </thead>
+
+      {% for rec in recommendation%}
+       <tr>
+         <td>{{rec.id}}</td>
+         <td>{{rec.User_id}}</td>
+         <td>{{rec.Product_id}}</td>
+       </tr>
+       {% endfor %}
+    </table>
+    <br>
+</div>
+{% endblock %}

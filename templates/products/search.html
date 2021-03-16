@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+{%extends 'user/index.html '%}
+
+{% block body_block %}
+<h1>Search Result</h1>
+<form methos='get' action='/productsearch' class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name='query' id='query'>
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+</form>
+  <table border =2>
+    <thead>
+        <th>Product ID</th>
+        <th>Product Shape</th>
+        <th>Product Size</th>
+        <th>Product Location</th>
+        <th>Product Price</th>
+    </thead>
+
+    {% for prd in product %}
+     <tr>
+       <td>{{prd.Pid}}</td>
+       <td>{{prd.shape}}</td>
+       <td>{{prd.size}}</td>
+       <td>{{prd.location}}</td>
+       <td>{{prd.price}}</td>
+     </tr>
+     {% endfor %}
+  </table>
+  <br>
+{% endblock %}

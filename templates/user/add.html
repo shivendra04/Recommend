@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+{%extends 'user/index.html '%}
+
+{% block body_block %}
+<h1>User Insertion Form</h1>
+  <form method="post">
+        {{form.as_p}}
+    {% csrf_token %}
+    <input type="submit" class='btn btn-primary btn-lg' value="Insert User">
+  </form>
+{% endblock %}

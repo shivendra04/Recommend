@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+{%extends 'user/index.html '%}
+
+{% block body_block %}
+<h1>Product Information Update Form</h1>
+<form method="post">
+{% csrf_token %}
+  Product ID &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp :<input type="text" name="Pid" value="{{product.Pid}}"><br>
+  Product Shape &nbsp&nbsp&nbsp&nbsp:<input type="text" name="shape" value="{{product.shape}}"><br>
+  Product Size &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:<input type="text" name="size" value="{{product.size}}"><br>
+  Product Location: <input type="text" name="location" value="{{product.location}}"><br>
+  Product Price &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:<input type="text" name="price" value="{{product.price}}"><br>
+  <input type="submit" name="" value="Update Record">
+</form>
+{% endblock %}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+{%extends 'user/index.html '%}
+
+{% block body_block %}
+
+<div class="container" align="center">
+  <h1>User List Dashbord</h1>
+    <table border =2>
+      <thead>
+          <th>User Name</th>
+          <th>User Age</th>
+          <th>User Address</th>
+          <th>Action</th>
+      </thead>
+
+      {% for usr in user %}
+       <tr>
+         <td>{{usr.name}}</td>
+         <td>{{usr.age}}</td>
+         <td>{{usr.address}}</td>
+         <td><a href="/update/{{usr.id}}">Update</a></td>
+       </tr>
+       {% endfor %}
+    </table>
+    <br>
+    <a href="/add" class ='btn btn-success btn-lg'>Insert New User</a>
+
+</div>
+
+{% endblock %}

@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+{%extends 'user/index.html '%}
+
+{% block body_block %}
+<h1>User Information Update Form</h1>
+<form method="post">
+{% csrf_token %}
+  User Name:<input type="text" name="name" value="{{user.name}}"><br>
+  User Age:<input type="text" name="age" value="{{user.age}}"><br>
+  User Address:<input type="text" name="address" value="{{user.address}}"><br>
+  <input type="submit" name="" value="Update Record">
+</form>
+{% endblock %}

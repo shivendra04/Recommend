@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+{%extends 'user/index.html '%}
+
+  {% block body_block %}
+  <div class="contaner" align="center">
+  <h1>Product List Dashbord</h1><br>
+  <a href="/productadd" class ='btn btn-success btn-lg'>Insert New Product</a><br><br>
+  <form methos='get' action='/productsearch' class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name='query' id='query'>
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+  </form>
+
+    <table border =2>
+      <thead>
+          <th>Product ID</th>
+          <th>Product Shape</th>
+          <th>Product Size</th>
+          <th>Product Location</th>
+          <th>Product Price</th>
+          <th>Action</th>
+      </thead>
+
+      {% for prd in productlist %}
+       <tr>
+         <td>{{prd.Pid}}</td>
+         <td>{{prd.shape}}</td>
+         <td>{{prd.size}}</td>
+         <td>{{prd.location}}</td>
+         <td>{{prd.price}}</td>
+         <td><a href="/productupdate/{{prd.id}}">Update</a></td>
+       </tr>
+       {% endfor %}
+    </table>
+     {%include 'products/pagination.html' with page=productlist %}
+</div>
+{% endblock %}
