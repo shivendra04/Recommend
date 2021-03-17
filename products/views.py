@@ -49,6 +49,7 @@ def product_search(request):
     products = Product.objects.filter(size__icontains = query)|Product.objects.filter(shape__icontains=query)
 
     cur_user = request.user.id
+    print(cur_user)
     search_data = products.values('Pid')
 
     recomends = Recommendation.objects.filter(User_id__iexact=cur_user)
