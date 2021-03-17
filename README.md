@@ -102,11 +102,18 @@ C:\Users\BizAct-110\Desktop\Recommendation\recommend> py manage.py runserver
 ![Image Not Available](https://github.com/shivendra04/Recommend/blob/master/Result/SignUpform.PNG)
 
 
+## Registered Users :-
+![Image Not Available](https://github.com/shivendra04/Recommend/blob/master/Result/RegisterdUers.PNG)
+
+
+
 # Author:
 
 Shivendra Verma
 
 Shivajnv2011@gmail.com
+
+BlogProject: http://djangoblog1.pythonanywhere.com/
 
 
 
